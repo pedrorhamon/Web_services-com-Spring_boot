@@ -12,7 +12,7 @@ import com.wars.star.entities.User;
 public class UserResource {
 	
 	@GetMapping
-	public ResponseEntity<User> fndAll(){
+	public ResponseEntity<User> findAll(){
 		User u = new User(1L, "Pedro", "pedro@gmail.com", "988989898", "01234");
 		return ResponseEntity.ok().body(u);
 	}
